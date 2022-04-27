@@ -1,0 +1,11 @@
+@startjson
+{
+   "code":"0",
+   "msg":"SUCCESS",
+   "data": {
+       "userPhone": "186818747575", 
+       "userName": "shunli", 
+       "userId": "216120086"
+   }
+}
+@endjson

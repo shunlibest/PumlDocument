@@ -1,0 +1,15 @@
+@startmindmap
+* RN和Native通信
+
+** Native主动向RN发起通信
+*** Native通过事件发送消息，RN在声明周期开始时进行监听
+' *** Native通过事件发送，RN在声明周期开始时进行监听
+
+
+** RN主动向Native发起通信
+*** Callback 回调方式：JS调用，Native异步返回
+*** Promise：JS调用，Native返回，每次使用需要JS调用一次
+*** 无回调直接发送事件：NativeModules.Event.sendEvent()事件
+
+
+@endmindmap

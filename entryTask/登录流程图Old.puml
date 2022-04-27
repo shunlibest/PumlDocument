@@ -1,0 +1,40 @@
+@startuml 登录流程图
+title 登录流程图
+
+!pragma useVerticalIf on
+
+(*) --> if "Logged in before" then
+    -->[true] "展示reLogin页面"
+    --> "用户输入密码"
+    --> if "验证成功" then
+        -->[true] "Toast登录成功"
+        -->"跳转至主页面"
+        else
+        --> [false] "用户输入密码"
+' start
+' if () then (YES)
+'   :展示reLogin页面;
+'   if(切换用户) then (NO)
+'     repeat :用户输入密码;
+'     repeat while (验证成功) is (NO) not (YES)
+'   endif
+
+' else (NO) 
+ 
+'   :展示手机号&密码输入页面;
+ 
+'   repeat :用户输入手机号&密码;
+'   repeat while (验证成功) is (NO) not (YES)
+
+'   repeat :用户输入Secure PIN;
+'   repeat while (验证成功) is (NO) not (YES)
+'     :用户输入Secure PIN;
+
+'   repeat :用户输入Verify OTP;
+'   repeat while (验证成功) is (NO) not (YES)
+' endif
+'   :登录成功;
+'   :跳转至主页面;
+
+' stop
+@enduml

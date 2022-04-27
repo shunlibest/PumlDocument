@@ -1,0 +1,23 @@
+@startuml 登录流程图
+title forceUpgradeDialog
+
+!pragma useVerticalIf on
+start
+
+:APP Launch;
+
+if(Load HighConfigResp) then (fail)
+    :use default value;
+
+else (Success)
+    :next;
+
+
+endif
+:next2;
+
+ 
+:use default value;
+
+stop
+@enduml

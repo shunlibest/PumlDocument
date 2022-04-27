@@ -1,0 +1,30 @@
+@startuml "登录用例图"
+left to right direction
+actor 用户
+actor 未登录用户
+actor 已登录用户
+
+用户 <|-- 未登录用户
+用户 <|-- 已登录用户
+
+package SecurityModule{
+    usecase SHA256
+}
+
+package UserModule{
+    usecase Login
+    usecase Logout
+    usecase Register #grey
+    usecase showUserInfo
+
+    Login .> (PIN) : include
+    Login .> SHA256 : include
+    Register .> SHA256 : include
+}
+
+未登录用户 --> Login
+未登录用户 --> Register
+已登录用户 --> Logout
+已登录用户 --> showUserInfo
+
+@enduml

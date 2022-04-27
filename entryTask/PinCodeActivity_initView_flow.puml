@@ -1,0 +1,449 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.shopee.bke.lib_user.PinCodeActivity",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_903151082 { 
+   	label=shopee
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_635015836 { 
+   	label=bke
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   AccountRequest1359912771[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AccountRequest</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   loginResultLiveData: UnPeekLiveData&lt;DataResult&lt;LoginResultData&gt;&gt; [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ onStop(owner: LifecycleOwner)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ requestLogin(user: UserBean)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+AppReactNativeHost432716772[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)AppReactNativeHost</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getInstance(mainApplication: Application): ReactNativeHost</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+BarUtils879663339[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)BarUtils</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addMarginTopEqualStatusBarHeight(view: View)</TD></TR>
+<TR><TD ALIGN="LEFT" >- addMarginTopEqualStatusBarHeight(window: Window)</TD></TR>
+<TR><TD ALIGN="LEFT" >- applyStatusBarColor(activity: AppCompatActivity, color: int, isDecor: boolean): View</TD></TR>
+<TR><TD ALIGN="LEFT" >- createStatusBarView(activity: AppCompatActivity, color: int): View</TD></TR>
+<TR><TD ALIGN="LEFT" >- getActivityByView(view: View): AppCompatActivity</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNavBarColor(activity: AppCompatActivity): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getNavBarColor(window: Window): int</TD></TR>
+<TR><TD ALIGN="LEFT" >- hideStatusBarView(activity: AppCompatActivity)</TD></TR>
+<TR><TD ALIGN="LEFT" >- hideStatusBarView(window: Window)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ isStatusBarLightMode(activity: AppCompatActivity): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ isStatusBarLightMode(window: Window): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ isStatusBarVisible(activity: AppCompatActivity): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setStatusBarColor(activity: AppCompatActivity, color: int): View</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setStatusBarColor(activity: AppCompatActivity, color: int, isDecor: boolean): View</TD></TR>
+<TR><TD ALIGN="LEFT" >- showStatusBarView(window: Window)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ subtractMarginTopEqualStatusBarHeight(view: View)</TD></TR>
+<TR><TD ALIGN="LEFT" >- subtractMarginTopEqualStatusBarHeight(window: Window)</TD></TR>
+<TR><TD ALIGN="LEFT" >- transparentStatusBar(activity: AppCompatActivity)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+BaseMvvmActivity1170880265[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)BaseMvvmActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mActivityProvider: ViewModelProvider [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mApplicationProvider: ViewModelProvider [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># getActivityScopeViewModel(modelClass: Class&lt;T&gt;): T</TD></TR>
+<TR><TD ALIGN="LEFT" >+ initObservable()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+DataBindingActivity808153380[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DataBindingActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mBinding: ViewDataBinding [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mTvStrictModeTip: TextView [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ initView()</TD></TR>
+<TR><TD ALIGN="LEFT" ># initViewModel()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onDestroy()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GsonUtil879663339[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GsonUtil</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ GsonString(object: Object): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ GsonToBean(gsonString: String, cls: Class&lt;T&gt;): T</TD></TR>
+<TR><TD ALIGN="LEFT" >+ GsonToListMaps(gsonString: String): List&lt;Map&lt;String, T&gt;&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ GsonToMaps(gsonString: String): Map&lt;String, T&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ jsonToList(json: String, cls: Class&lt;T&gt;): List&lt;T&gt;</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LoginActivity1170645342[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LoginActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mIsListened: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mState: LoginActivityViewModel [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- init()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ initObservable()</TD></TR>
+<TR><TD ALIGN="LEFT" ># initViewModel()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onDestroy()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onMessageEvent(event: UserDataUpdateEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onWindowFocusChanged(hasFocus: boolean)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LoginActivityViewModel1170645342[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LoginActivityViewModel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+   accountRequest: AccountRequest [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   loadingDialogVisible: ObservableBoolean [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   password: ObservableField&lt;String&gt; [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   phone: ObservableField&lt;String&gt; [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MainActivity9555611[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MainActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   mReactInstanceManager: ReactInstanceManager [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mState: MainActivityViewModel [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ initObservable()</TD></TR>
+<TR><TD ALIGN="LEFT" ># initViewModel()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ invokeDefaultOnBackPressed()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ jumpLoginPage()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ logout()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onActivityResult(requestCode: int, resultCode: int, data: Intent)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onCreate(savedInstanceState: Bundle)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onDestroy()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onKeyUp(keyCode: int, event: KeyEvent): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ onMessageEvent(event: UserDataUpdateEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" ># onPause()</TD></TR>
+<TR><TD ALIGN="LEFT" ># onResume()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ requestUserData()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ tabSelected(tabName: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MainActivityViewModel9555611[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MainActivityViewModel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+   selectedTab: MutableLiveData&lt;String&gt; [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ changeSelectedTab(tabName: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PinCodeActivity1170645342[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PinCodeActivity</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   dbKeyboardNumView: KeyboardDigitalNumView [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mState: PinCodeActivityViewModel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   verifyCodeEditText: VerifyCodeEditText [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ initObservable()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ initView()</TD></TR>
+<TR><TD ALIGN="LEFT" ># initViewModel()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PinCodeActivityViewModel1170645342[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PinCodeActivityViewModel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+   accountRequest: AccountRequest [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   name: ObservableField&lt;String&gt; [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >+   password: ObservableField&lt;String&gt; [0..1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ProtectedUnPeekLiveData42296915[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ProtectedUnPeekLiveData&lt;T&gt;</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   isAllowNullValue: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   mCurrentVersion: AtomicInteger [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ clear()</TD></TR>
+<TR><TD ALIGN="LEFT" >- createObserverWrapper(observer: Observer&lt;? super T&gt;, version: int): ObserverWrapper</TD></TR>
+<TR><TD ALIGN="LEFT" >+ observe(owner: LifecycleOwner, observer: Observer&lt;? super T&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ observeForever(observer: Observer&lt;? super T&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ observeSticky(owner: LifecycleOwner, observer: Observer&lt;T&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ observeStickyForever(observer: Observer&lt;? super T&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeObserver(observer: Observer&lt;? super T&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+RNEventManager432716772[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)RNEventManager</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ register(object: Object)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent(eventName: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent0(eventName: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent1(eventName: String, value1: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent2(eventName: String, value1: String, value2: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ unregister(object: Object)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ReflectionUtil432716772[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ReflectionUtil</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ getFieldValue(obj: Object, fieldName: String): Object</TD></TR>
+<TR><TD ALIGN="LEFT" >+ invokeDeclaredMethod(obj: Object, methodName: String, params: Object[]): Object</TD></TR>
+<TR><TD ALIGN="LEFT" >+ invokeMethod(obj: Object, methodName: String, params: Object[]): Object</TD></TR>
+<TR><TD ALIGN="LEFT" >+ invokeSp(name: String): SharedPreferences</TD></TR>
+<TR><TD ALIGN="LEFT" >+ invokeStaticMethod(obj: String, methodName: String, params: Object[], parameterTypes: Class&lt;?&gt;...): Object</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SPUtil879663339[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SPUtil</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ clear()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getBoolean(key: String, defValue: boolean): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getInt(key: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getLong(key: String): long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getString(key: String): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ init(application: Application)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ print()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ putBoolean(key: String, value: Boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ putInt(key: String, value: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ putLong(key: String, value: long)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ putString(key: String, value: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeString(key: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SendEventToRn432716772[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SendEventToRn</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ init(reactApplicationContext: ReactApplicationContext)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent(eventName: String, value: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent(eventName: String, key: String, value: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sendEvent(eventName: String, params: WritableMap)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+UnPeekLiveData42296915[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)UnPeekLiveData&lt;T&gt;</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ postValue(value: T)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+BaseMvvmActivity1170880265 -> BarUtils879663339[label="onCreate() -> setStatusBarColor()"];
+BaseMvvmActivity1170880265 -> LoginActivity1170645342[arrowhead=none, arrowtail=empty, dir=both];
+BaseMvvmActivity1170880265 -> MainActivity9555611[arrowhead=none, arrowtail=empty, dir=both];
+BaseMvvmActivity1170880265 -> PinCodeActivity1170645342[arrowhead=none, arrowtail=empty, dir=both];
+DataBindingActivity808153380 -> BaseMvvmActivity1170880265[arrowhead=none, arrowtail=empty, dir=both];
+LoginActivity1170645342 -> DataBindingActivity808153380[label="onDestroy() -> onDestroy()"];
+LoginActivity1170645342 -> LoginActivityViewModel1170645342[label="mState
+[0..1]"];
+LoginActivity1170645342 -> ProtectedUnPeekLiveData42296915[label="initObservable() -> observe()"];
+LoginActivityViewModel1170645342 -> AccountRequest1359912771[label="accountRequest
+[0..1]"];
+MainActivity9555611 -> AppReactNativeHost432716772[label="onCreate() -> getInstance()"];
+MainActivity9555611 -> DataBindingActivity808153380[label="onDestroy() -> onDestroy()"];
+MainActivity9555611 -> GsonUtil879663339[label="logout() -> GsonString()"];
+MainActivity9555611 -> MainActivityViewModel9555611[label="mState
+[0..1]"];
+PinCodeActivity1170645342 -> DataBindingActivity808153380[label="initView() -> initView()"];
+PinCodeActivity1170645342 -> GsonUtil879663339[label="initView() -> GsonString()"];
+PinCodeActivity1170645342 -> PinCodeActivityViewModel1170645342[label="mState
+[0..1]"];
+PinCodeActivity1170645342 -> SPUtil879663339[label="initView() -> putString()"];
+PinCodeActivityViewModel1170645342 -> AccountRequest1359912771[label="accountRequest
+[0..1]"];
+ProtectedUnPeekLiveData42296915 -> UnPeekLiveData42296915[arrowhead=none, arrowtail=empty, dir=both];
+RNEventManager432716772 -> ReflectionUtil432716772[label="sendEvent2() -> invokeDeclaredMethod()"];
+    
+}
+@enduml

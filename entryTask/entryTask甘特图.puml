@@ -1,0 +1,26 @@
+@startuml
+ 
+Project starts 2022-3-30
+' saturday are closed
+' sunday are closed
+2022-4-2 to 2022-4-4 is closed
+2022-4-9 to 2022-4-10 is closed
+
+
+[Learn team Rules] starts 2022-3-30 and lasts 2 day
+
+[ReadTask & Init] starts 2022-4-1 and lasts 2 day
+
+[BaseLib & architecture] starts at [ReadTask & Init]'s end and lasts 2 day
+
+[RN Bridge] starts at [BaseLib & architecture]'s end and lasts 1 day
+
+[RN UI] starts at [RN Bridge]'s end and lasts 2 day
+[Native UI] starts 1 days after [RN UI]'s start and lasts 2 day
+
+[Test] starts at [Native UI]'s start and lasts 1 day
+[Document ] starts at 2022-4-13 and lasts 1 day
+
+
+' [Test prototype] starts 2020-07-16
+@enduml

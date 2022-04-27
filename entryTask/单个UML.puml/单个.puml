@@ -1,0 +1,23 @@
+@startmindmap
+
+
+
+* biz_debug
+** BkeDebugActivity 
+***_ 点击系统消息通知可跳转
+*** Switch env
+
+
+** FuncDebugActivity 
+*** 自定义键盘/UI
+*** 认证&账户&安全
+*** 路由、通知
+*** 性能测试
+
+
+** DeviceInfoActivity
+***_ check version
+
+
+
+@endmindmap

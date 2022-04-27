@@ -1,0 +1,39 @@
+@startuml 登录流程图
+title 登录流程图
+
+!pragma useVerticalIf on
+start
+if (Logged in before？) then (YES)
+    label sp_lab0
+    label sp_lab1
+    label sp_lab1
+    label sp_lab1
+    label sp_lab1
+    label lab
+    :展示手机号&密码输入页面;
+    
+    repeat :用户输入手机号&密码;
+    repeat while (验证成功) is (NO) not (YES)
+
+    repeat :用户输入Secure PIN;
+    repeat while (验证成功) is (NO) not (YES)
+        :用户输入Secure PIN;
+
+    repeat :用户输入Verify OTP;
+    repeat while (验证成功) is (NO) not (YES)
+else (NO) 
+    :展示reLogin页面;
+    if(切换用户) then (YES)
+        label sp_lab2
+        label sp_lab2
+        goto lab
+    else(NO)
+        repeat :用户输入密码;
+        repeat while (验证成功) is (NO) not (YES)
+    endif
+endif
+    :登录成功;
+    :跳转至主页面;
+
+stop
+@enduml

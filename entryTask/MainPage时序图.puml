@@ -1,0 +1,28 @@
+@startuml
+
+!pragma useVerticalIf on
+
+package "Native" {
+    [MainActivity]
+    [Fragment] 
+    MainActivity -> Fragment
+}
+
+
+package "Rn" {
+    [MainPage]
+    [HomePage] 
+    [TransferPage] 
+    [MePage] 
+    MainPage  -down-> HomePage
+    MainPage  -down-> TransferPage
+    MainPage  -down-> MePage
+}
+
+Fragment -down-> MainPage
+
+
+
+
+ 
+@enduml

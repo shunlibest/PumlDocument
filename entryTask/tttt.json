@@ -1,0 +1,965 @@
+{
+    "default": {
+        "responses": [
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_30"
+                    },
+                    {
+                        "id": "active_users_30"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1082622
+                            },
+                            {
+                                "value": 1097250
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1083942
+                            },
+                            {
+                                "value": 1093509
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1086261
+                            },
+                            {
+                                "value": 1092909
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 3252825
+                        },
+                        {
+                            "value": 3283668
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "725",
+                        "reportRequestLatencyMs": "758",
+                        "f1GcuSecs": 15.155
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 6,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_0",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            },
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_7"
+                    },
+                    {
+                        "id": "active_users_7"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 453793
+                            },
+                            {
+                                "value": 480771
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 455089
+                            },
+                            {
+                                "value": 480423
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 452744
+                            },
+                            {
+                                "value": 468840
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 1361626
+                        },
+                        {
+                            "value": 1430034
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "794",
+                        "reportRequestLatencyMs": "820",
+                        "f1GcuSecs": 4.973
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 6,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_1",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            },
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_1"
+                    },
+                    {
+                        "id": "active_users_1"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 187082
+                            },
+                            {
+                                "value": 171328
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 173563
+                            },
+                            {
+                                "value": 166351
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 199644
+                            },
+                            {
+                                "value": 175960
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 314780
+                        },
+                        {
+                            "value": 296761
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "736",
+                        "reportRequestLatencyMs": "760",
+                        "f1GcuSecs": 2.813
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 6,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_2",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            },
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_30"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1082622
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1083942
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 1086261
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 3252825
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "723",
+                        "reportRequestLatencyMs": "755",
+                        "f1GcuSecs": 6.978
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 3,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_3",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            },
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_7"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 453793
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 455089
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 452744
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 1361626
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "592",
+                        "reportRequestLatencyMs": "613",
+                        "f1GcuSecs": 2.854
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 3,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_4",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            },
+            {
+                "dimensions": [
+                    "nth_day"
+                ],
+                "metrics": [
+                    {
+                        "id": "active_users_1"
+                    }
+                ],
+                "colDimensions": [
+                    
+                ],
+                "responseRows": [
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0000"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 187082
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0001"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 173563
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    },
+                    {
+                        "dimensionValues": [
+                            
+                        ],
+                        "dimensionCompoundValues": [
+                            {
+                                "value": "0002"
+                            }
+                        ],
+                        "metricValues": [
+                            
+                        ],
+                        "metricCompoundValues": [
+                            {
+                                "value": 199644
+                            }
+                        ],
+                        "rowTotals": [
+                            
+                        ],
+                        "anomalyAnnotations": [
+                            
+                        ]
+                    }
+                ],
+                "totalsRow": {
+                    "dimensionValues": [
+                        
+                    ],
+                    "dimensionCompoundValues": [
+                        {
+                            "value": "RESERVED_TOTAL"
+                        }
+                    ],
+                    "metricValues": [
+                        
+                    ],
+                    "metricCompoundValues": [
+                        {
+                            "value": 314780
+                        }
+                    ],
+                    "rowTotals": [
+                        
+                    ],
+                    "anomalyAnnotations": [
+                        
+                    ]
+                },
+                "pivotHeaders": [
+                    
+                ],
+                "storageIds": [
+                    
+                ],
+                "segmentKeyMap": [
+                    
+                ],
+                "overallRowCount": 3,
+                "freshnessTimestamp": "1649661290002861",
+                "numberOfSamplesRead": [
+                    
+                ],
+                "samplingSpaceSize": [
+                    
+                ],
+                "metadata": {
+                    "performance": {
+                        "f1QueryLatencyMs": "721",
+                        "reportRequestLatencyMs": "745",
+                        "f1GcuSecs": 1.793
+                    },
+                    "classification": {
+                        "identityBlendingStrategy": 2,
+                        "numDaysInDateRange": 3,
+                        "externalWideningSources": [
+                            
+                        ],
+                        "storageType": [
+                            1
+                        ]
+                    },
+                    "venusRequestId": "17578019494236579239_1650529596276798372_5",
+                    "dataTruncationReasons": [
+                        
+                    ],
+                    "isBehavioralModelingEnabledByUser": false,
+                    "isBehavioralModelingApplied": false
+                }
+            }
+        ],
+        "metadata": {
+            "guid": "C29B506C-CF9C-4802-82B8-5E7A55FB2039",
+            "performance": {
+                "beConfigLatencyMs": "3",
+                "reportingServiceTotalLatencyMs": "959",
+                "checkVenusDataAccessLatencyMs": "95"
+            }
+        }
+    }
+}

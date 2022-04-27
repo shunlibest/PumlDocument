@@ -1,0 +1,90 @@
+@startmindmap
+* app
+** LauncherActivity
+***_ 启动页面
+***_ ROOT检测
+***_ 处理和MainActivity的任务栈
+
+** MainActivity
+***_ 最上层覆盖webview，展示临时消息
+*** HomePage
+**** BalanceCard
+**** 交易Button
+**** Banner
+**** Transfer History
+
+*** TransferPage
+****_ Function Grid
+***** 转账
+***** 电子钱包
+****_ 收藏夹
+****_ 交易记录
+
+
+
+*** MePage
+****_ userInfo Display
+**** Profile
+**** Account Security
+*****_ Update Password
+*****_ Update PIN
+**** WalletSetting
+**** help/chat/feedback
+
+
+* GlobalFunction 
+** IM
+***_ based on DBBaseReactActivity
+** Notification
+***_ based on DBBaseReactActivity
+
+
+* auth
+** VideoAuthEntryCompactActivity
+***_ 认证排队页面
+** VideoAuthServiceCompactActivity
+***_ 认证视频
+*** KtpCameraActivity
+
+
+
+* biz_user
+** LoginActivity
+*** Quick登录
+*** PIN Code
+*** SHOPEECONNECT
+*** VIDEOCALL
+*** .....多种登录方式
+
+** RegisterActivity
+*** use Shopee Account
+*** Sign up with phone
+
+**_ VerifyCodeActivity
+**_ SetPwdActivity
+**_ VerifyPinCodeActivity
+**_ UpdatePwdActivity
+**_ FacialUserInfoActivity
+**_ OneTimePasswordActivity
+**_ QRImageCropActivity
+
+
+* biz_debug
+** BkeDebugActivity 
+***_ 点击系统消息通知可跳转
+*** Switch env
+
+
+** FuncDebugActivity 
+*** 自定义键盘/UI
+*** 认证&账户&安全
+*** 路由、通知
+*** 性能测试
+
+
+** DeviceInfoActivity
+***_ googlePlay Version
+
+
+
+@endmindmap

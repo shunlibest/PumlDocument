@@ -1,0 +1,58 @@
+@startuml
+
+
+actor Inner
+actor OtherModule
+collections WhiteUrlSet
+participant NetErrorUpgradeManager
+participant NetErrorInterceptor
+participant NetErrorInterceptor
+
+participant MarketUtil
+
+Inner -> WhiteUrlSet :  add tracking&cschat URL
+OtherModule -> WhiteUrlSet : add other URL
+
+NetErrorUpgradeManager -> NetErrorUpgradeManager : Load Config
+NetErrorInterceptor -> NetErrorUpgradeManager : judgeErrorCount
+activate NetErrorUpgradeManager
+NetErrorUpgradeManager -> WhiteUrlSet : search url
+activate WhiteUrlSet
+WhiteUrlSet -> NetErrorUpgradeManager : result:True or False
+deactivate WhiteUrlSet
+
+NetErrorUpgradeManager -> NetErrorUpgradeManager : errorCount & errorTime
+NetErrorUpgradeManager -> NetErrorUpgradeManager : VPN check
+NetErrorUpgradeManager -> MarketUtil : asynGetGooglePlayData
+activate MarketUtil
+
+MarketUtil -> NetErrorUpgradeManager : callBackVersion
+deactivate MarketUtil
+
+NetErrorUpgradeManager -> NetErrorUpgradeManager : judgeDialog
+
+ 
+' ==RN To Native ==
+
+' MainActivity -> RNEventManager : register
+' RNPage -> RNEventManager : sendEvent
+
+' RNEventManager -> RNEventManager : ForEach
+' RNEventManager -> MainActivity : Reflect&invoke
+
+' ==Native To RN  ==
+' RNPage -> RNPage : Emitter.addListener
+' activate RNPage
+
+' MainActivity -> RNEventManager : SendEventToRn
+' RNEventManager -> RNPage : reactContext.emit
+
+' deactivate RNPage
+' deactivate RNPage
+
+' Foo -> Foo3 : To control
+' Foo -> Foo4 : To entity
+' Foo -> Foo5 : To database
+' Foo -> Foo6 : To collections
+' Foo -> Foo7: To queue
+@enduml
