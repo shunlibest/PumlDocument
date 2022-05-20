@@ -1,0 +1,45 @@
+@startuml "登录用例图"
+left to right direction
+actor developer
+actor ArrayTextView
+actor ArrayEditText
+
+
+developer <|-- ArrayTextView
+developer <|-- ArrayEditText
+
+ 
+package NativeSecurity{
+    usecase AES 
+}
+
+package View{
+    usecase setText
+    usecase setTextSize
+    usecase setTextColor
+    usecase setPadding
+
+    usecase moveCursor
+    usecase changeText
+
+
+    ' usecase Register #grey
+    ' usecase showUserInfo
+
+    setText .> AES : include
+    ' Login .> SHA256 : include
+    ' Register .> SHA256 : include
+}
+
+
+
+developer --> setText
+developer --> setTextSize
+developer --> setTextColor
+developer --> setPadding
+
+
+ArrayEditText --> moveCursor
+ArrayEditText --> changeText
+
+@enduml

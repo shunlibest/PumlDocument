@@ -1,0 +1,30 @@
+@startmindmap
+* ForceUpgradeDialog
+** NET Check
+*** VPN
+****_ different phone
+****_ different VPN
+*** Proxy
+****_ Charles Proxy
+
+** GoogleMarket
+*** debug version
+*** Google Play Beta test
+
+
+
+** ForceUpgradeDialog logical
+*** Config
+**** ssl_max_fail_times
+**** ssl_fail_time_interval
+
+*** NetError
+****_ 400
+
+** Firebase
+*** upgrade_alert_by_ssl_fail
+*** ssl_fail_except_api
+
+
+ 
+@endmindmap

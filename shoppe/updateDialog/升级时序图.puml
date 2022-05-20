@@ -6,7 +6,6 @@ actor OtherModule
 collections WhiteUrlSet
 participant NetErrorUpgradeManager
 participant NetErrorInterceptor
-participant NetErrorInterceptor
 
 participant MarketUtil
 

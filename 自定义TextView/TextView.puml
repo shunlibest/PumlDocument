@@ -1,0 +1,77 @@
+@startuml
+
+!theme plain
+' top to bottom direction
+' skinparam linetype ortho
+
+class View{
+  + onDraw() : void
+}
+class ArrayTextView extends  View{
+  + setMaxLine(int): void
+  + setText(String?): void
+  + setPadding(int, int, int, int): void
+  + setTextSize(float): void
+  + setDisplayEllipsize(boolean): void
+  + setText(char[]): void
+  # drawCursor(Canvas): void
+}
+
+interface EditableView << interface >> {
+  + insertChar(char): void
+  + deleteChar(): void
+}
+
+
+class ArrayEditText extends ArrayTextView implements EditableView{
+  + deleteChar(): void
+  + setTextSize(float): void
+  + insertChar(char): void
+  + setPasswordMode(boolean): void
+  + drawCursor(Canvas): void
+}
+
+together {
+  class View
+  class ArrayTextView
+  class EditableView
+  class ArrayEditText
+}
+
+
+class TextLayout {
+  ~ setAlignment(Alignment): void
+  ~ setMaxLine(int): void
+  ~ getOneLineWidth(): int
+  ~ setDisplayEllipsize(boolean): void
+  ~ setWidth(int): void
+  ~ insetChar(char, int): void
+  ~ getLineAtCoordinate(float): int
+  ~ setPasswordMode(boolean): void
+  ~ removeChar(int): void
+  ~ draw(Canvas): void
+  ~ getLineBottom(int): int
+}
+
+ArrayTextView *- TextLayout
+
+
+
+class StringWrapper {
+  + toString(): String
+  + getPasswordMode(): boolean
+  + removeChar(int): void
+  + setPasswordMode(boolean): void
+  + charAt(int): char
+  + length(): int
+  + insetChar(char, int): void
+}
+
+TextLayout *-- StringWrapper
+
+together {
+  class TextLayout
+  class StringWrapper
+}
+
+@enduml
